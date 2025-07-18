@@ -8,6 +8,7 @@ Ubicación: `./frontend`
 - SPA que simula un portafolio de inversiones
 - TailwindCSS
 - Estado con `useState`
+- Link Vercel: https://portfolio-investmens.vercel.app/
 
 ## 🔐 Backend (Node.js)
 Ubicación: `./backend`
