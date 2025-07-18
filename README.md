@@ -14,6 +14,9 @@ Ubicación: `./backend`
 
 - API RESTful con autenticación JWT
 - Control de acceso por roles (`admin` y `analyst`)
+- GetAllInvestments --> Ver todas la inverciones
+  AddInvestment --> Agregar nueva inversión (SOLO ADMIN)
+  DeleteInvestment --> Eliminar inversión (SOLO ADMIN)
 
 ## 🚀 Cómo ejecutar
 
@@ -22,3 +25,10 @@ Ubicación: `./backend`
 cd frontend
 npm install
 npm start
+```
+### Backend
+```bash
+cd backend
+npm install
+npm run start --> correr proyecto normal
+npm run dev --> correr proyecto con autorefresh de los cambios
