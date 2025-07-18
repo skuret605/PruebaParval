@@ -1,12 +1,68 @@
-# React + Vite
+# Portfolio Simulator (Frontend)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación React + Vite para simular y gestionar inversiones en portafolios. Permite visualizar, agregar y listar inversiones de manera interactiva.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visualización de inversiones en una tabla con estilos modernos (TailwindCSS).
+- Formulario para agregar nuevas inversiones con validaciones.
+- Estado reactivo para la gestión de inversiones.
+- Configuración ESLint y Vite optimizada para React 19.
+- Estructura modular con componentes reutilizables.
 
-## Expanding the ESLint configuration
+## Estructura de Carpetas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+frontend/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── PortfolioInvestments.js
+│   ├── index.css
+│   ├── main.jsx
+│   ├── assets/
+│   │   └── react.svg
+│   └── components/
+│       ├── PortfolioForm.jsx
+│       └── PortfolioTable.jsx
+├── index.html
+├── package.json
+├── vite.config.js
+├── eslint.config.js
+└── README.md
+```
+
+## Instalación
+
+```sh
+npm install
+```
+
+## Scripts
+
+- `npm run dev` — Inicia el servidor de desarrollo.
+- `npm run build` — Compila la aplicación para producción.
+- `npm run preview` — Previsualiza la build de producción.
+- `npm run lint` — Ejecuta ESLint.
+
+## Uso
+
+1. Ejecuta `npm run dev` y abre [http://localhost:5173](http://localhost:5173) en tu navegador.
+2. Agrega inversiones usando el formulario.
+3. Visualiza el listado actualizado en la tabla.
+
+## Componentes Principales
+
+- [`App`](src/App.jsx): Componente raíz, gestiona el estado global de inversiones.
+- [`PortfolioForm`](src/components/PortfolioForm.jsx): Formulario para agregar inversiones con validaciones.
+- [`PortfolioTable`](src/components/PortfolioTable.jsx): Tabla para mostrar las inversiones.
+- [`PortfolioInvestments`](src/PortfolioInvestments.js): Datos iniciales de ejemplo.
+
+## Estilos
+
+- Utiliza [TailwindCSS](https://tailwindcss.com/) para estilos rápidos y responsivos.
+
+## Notas
+
+- Los datos de inversiones se almacenan en memoria (no persistente).
